@@ -8,6 +8,10 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body{
     font-size: 16px; /*1rem = 10px*/
@@ -49,4 +53,11 @@ body{
 .navegacion-principal a:hover{ /*pseudoclase, evento para los enlaces*/
     background-color: var(--primario);
     color: var(--oscuro);
+}
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
 }
