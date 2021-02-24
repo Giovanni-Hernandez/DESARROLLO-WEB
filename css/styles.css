@@ -5,10 +5,10 @@
     --secundario: #0097a7;
     --gris: #757575;
 }
-
+/* Globales */
 html{
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box;  /*Hack para Box Model */
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -17,6 +17,30 @@ body{
     font-size: 16px; /*1rem = 10px*/
     font-family: 'Krub', sans-serif;
 }
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto; /*margin: 0 auto 0 auto;*/ /*margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;*/
+}
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none; /*Quitar la linea de decoracion enlace*/
+    text-transform: uppercase; /* Texto con mayúsculas */
+    font-weight: 700; /*bold = 700*/
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .boton{
+        width:auto /*se resetea el ancho*/
+    }
+}
+
+/* Tipografía */
 h1{
     font-size: 3.8rem; /*rem nos permite que las letras se adapten a diferentes tamaños de pantallas a diferencia de los px*/
 }
@@ -25,18 +49,17 @@ h2{
 }
 h3{
     font-size: 1.8rem;
-}
+} 
 h1, h2, h3{
     text-align: center;   
 }
+/* Titulos */
 .titulo span{
     font-size: 2rem;
 }
-.contenedor{
-    max-width: 120rem;
-    margin: 0 auto; /*margin: 0 auto 0 auto;*/ /*margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;*/
-}
-.nav-bg{ /* nav background*/
+
+/* Navegación Principal */
+.nav-bg{ 
     background-color: var(--secundario);
 }
 .navegacion-principal{
@@ -62,6 +85,8 @@ h1, h2, h3{
     background-color: var(--primario);
     color: var(--oscuro);
 }
+
+/* Hero */
 .hero{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
