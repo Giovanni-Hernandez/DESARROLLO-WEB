@@ -120,3 +120,11 @@ h1, h2, h3{
 .contenido-hero p{
     color: var(--blanco);
 }
+
+/*Servicios*/
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+      grid-template-columns: repeat(3, 1fr);  /* grid-template-columns: 1fr 1fr 1fr; grid se encarga de hacer los cálculos de fracciones */
+    }
+}
